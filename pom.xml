@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>checkstyle</artifactId>
-	<version>8.38.0-SNAPSHOT</version>
+	<version>8.38.0</version>
 	<packaging>jar</packaging>
 
 	<name>Checkstyle</name>
@@ -22,7 +22,7 @@
 		<connection>scm:git:git@github.com:bitmc/checkstyle.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/bitmc/checkstyle.git</developerConnection>
 		<url>https://github.com/bitmc/checkstyle</url>
-		<tag>HEAD</tag>
+		<tag>8.38.0</tag>
 	</scm>
 
 	<repositories>
