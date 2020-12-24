@@ -279,6 +279,7 @@
 			<property name="validateThrows" value="true"/>
 		</module>
 
+		<module name="JavadocMissingLeadingAsterisk"/>
 		<module name="JavadocMissingWhitespaceAfterAsterisk"/>
 		<module name="JavadocParagraph"/>
 
@@ -295,6 +296,7 @@
 		<module name="JavadocVariable"/>
 		<module name="MissingJavadocPackage"/>
 		<module name="NonEmptyAtclauseDescription"/>
+		<module name="RequireEmptyLineBeforeBlockTagGroup"/>
 		<module name="SingleLineJavadoc"/>
 
 		<module name="SummaryJavadocCheck">
@@ -384,7 +386,9 @@
 			<property name="ignoreStatic" value="false"/>
 		</module>
 
-		<module name="AbstractClassName"/>
+		<module name="AbstractClassName">
+			<property name="format" value="^Abstract.+$|^.+Base$"/>
+		</module>
 
 		<module name="CatchParameterName">
 			<property name="severity" value="ignore"/>
@@ -396,6 +400,7 @@
 			<property name="format" value="^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$|^logger$"/>
 		</module>
 
+		<module name="IllegalIdentifierName"/>
 		<module name="InterfaceTypeParameterName"/>
 		<module name="LambdaParameterName"/>
 		<module name="LocalFinalVariableName"/>
@@ -413,6 +418,8 @@
 		</module>
 
 		<module name="ParameterName"/>
+		<module name="PatternVariableName"/>
+		<module name="RecordTypeParameterName"/>
 		<module name="StaticVariableName"/>
 		<module name="TypeName"/>
 
@@ -423,6 +430,10 @@
 		</module>
 
 		<module name="ExecutableStatementCount">
+			<property name="severity" value="ignore"/>
+		</module>
+
+		<module name="LambdaBodyLength">
 			<property name="severity" value="ignore"/>
 		</module>
 
@@ -439,6 +450,10 @@
 		</module>
 
 		<module name="ParameterNumber">
+			<property name="severity" value="ignore"/>
+		</module>
+
+		<module name="RecordComponentNumber">
 			<property name="severity" value="ignore"/>
 		</module>
 
