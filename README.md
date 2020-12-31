@@ -29,12 +29,12 @@
 			<dependency>
 				<groupId>com.puppycrawl.tools</groupId>
 				<artifactId>checkstyle</artifactId>
-				<version>8.35</version>
+				<version>8.38</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.bitmc</groupId>
 				<artifactId>checkstyle</artifactId>
-				<version>8.35.0</version>
+				<version>8.38.0</version>
 			</dependency>
 		</dependencies>
 	</plugin>

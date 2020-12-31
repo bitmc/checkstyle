@@ -296,7 +296,12 @@
 		<module name="JavadocVariable"/>
 		<module name="MissingJavadocPackage"/>
 		<module name="NonEmptyAtclauseDescription"/>
-		<module name="RequireEmptyLineBeforeBlockTagGroup"/>
+
+		<!-- TODO Ignore first space -->
+		<module name="RequireEmptyLineBeforeBlockTagGroup">
+			<property name="severity" value="ignore"/>
+		</module>
+
 		<module name="SingleLineJavadoc"/>
 
 		<module name="SummaryJavadocCheck">

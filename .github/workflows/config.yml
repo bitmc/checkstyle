@@ -10,8 +10,8 @@ jobs:
     if: ${{ !contains(github.event.head_commit.message, 'ci skip') }}
     runs-on: ubuntu-latest
     env:
-      MAVEN_USERNAME: ${{ secrets.MAVEN_SONATYPE_USERNAME }}
-      MAVEN_PASSWORD: ${{ secrets.MAVEN_SONATYPE_PASSWORD }}
+      MAVEN_USERNAME: ${{ secrets.PUBLIC_MAVEN_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.PUBLIC_MAVEN_PASSWORD }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-java@v1
@@ -33,13 +33,13 @@ jobs:
     if: ${{ startsWith(github.ref, 'refs/heads/release') }}
     runs-on: ubuntu-latest
     env:
-      GIT_USER_EMAIL: ${{ secrets.BUILD_GIT_USER_EMAIL }}
-      GIT_USER_NAME: ${{ secrets.BUILD_GIT_USER_NAME }}
-      GITHUB_SSH_KEY: ${{ secrets.BUILD_GITHUB_SSH_KEY }}
-      GPG_KEY_BASE64: ${{ secrets.BUILD_GPG_KEY_BASE64 }}
-      GPG_PASSPHRASE: ${{ secrets.BUILD_GPG_PASSPHRASE }}
-      MAVEN_USERNAME: ${{ secrets.MAVEN_SONATYPE_USERNAME }}
-      MAVEN_PASSWORD: ${{ secrets.MAVEN_SONATYPE_PASSWORD }}
+      GIT_USER_EMAIL: ${{ secrets.PUBLIC_GIT_USER_EMAIL }}
+      GIT_USER_NAME: ${{ secrets.PUBLIC_GIT_USER_NAME }}
+      GITHUB_SSH_KEY: ${{ secrets.PUBLIC_GITHUB_SSH_KEY }}
+      GPG_KEY_BASE64: ${{ secrets.PUBLIC_GPG_KEY_BASE64 }}
+      GPG_PASSPHRASE: ${{ secrets.PUBLIC_GPG_PASSPHRASE }}
+      MAVEN_USERNAME: ${{ secrets.PUBLIC_MAVEN_USERNAME }}
+      MAVEN_PASSWORD: ${{ secrets.PUBLIC_MAVEN_PASSWORD }}
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-java@v1
