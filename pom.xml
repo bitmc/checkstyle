@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>checkstyle</artifactId>
-	<version>8.38.2-SNAPSHOT</version>
+	<version>8.39.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Checkstyle</name>
@@ -24,6 +24,10 @@
 		<url>https://github.com/bitmc/checkstyle</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<properties>
+		<checkstyle.version>8.39</checkstyle.version>
+	</properties>
 
 	<repositories>
 		<repository>
