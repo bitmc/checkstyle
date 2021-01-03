@@ -29,12 +29,12 @@
 			<dependency>
 				<groupId>com.puppycrawl.tools</groupId>
 				<artifactId>checkstyle</artifactId>
-				<version>8.38</version>
+				<version>8.39</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.bitmc</groupId>
 				<artifactId>checkstyle</artifactId>
-				<version>8.38.0</version>
+				<version>8.39.0</version>
 			</dependency>
 		</dependencies>
 	</plugin>
@@ -42,4 +42,4 @@
 
 ## License
 
-* Apache License 2.0.
+* Apache License 2.0
